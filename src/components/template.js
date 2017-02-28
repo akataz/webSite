@@ -1,10 +1,13 @@
 import React from 'react';
 
 //  jQuery -->
-import "../styles/js/jquery.js";
+//import "../lib/js/jquery.js";
 //  Bootstrap Core JavaScript -->
-import "../styles/js/bootstrap.min.js";
-import "../styles/css/landing-page.css"
+//import "../lib/js/bootstrap.min.js";
+//def loading up that css properly
+import "../lib/css/landing-page.css";
+//does not seem to load up
+//import "../lib/font-awesome/css/font-awesome.min.css"
 
 const Template = () => {
     //  Navigation -->
@@ -20,16 +23,16 @@ const Template = () => {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand topnav" href="#">Start Bootstrap</a>
+                    <a className="navbar-brand topnav" href="#">Tyrus Brenc</a>
                 </div>
                 {/*//  Collect the nav links, forms, and other content for toggling -->*/}
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about">Projects</a>
                         </li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#services">About</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -50,18 +53,18 @@ const Template = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="intro-message">
-                            <h1>Landing Page</h1>
-                            <h3>A Template by Start Bootstrap</h3>
+                            <h1>Tyrus Brenc</h1>
+                            <h3>Software Engineer</h3>
                             <hr className="intro-divider"/>
                             <ul className="list-inline intro-social-buttons">
                                 <li>
                                     <a href="https://twitter.com/SBootstrap" className="btn btn-default btn-lg"><i className="fa fa-twitter fa-fw"></i> <span className="network-name">Twitter</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/IronSummitMedia/startbootstrap" className="btn btn-default btn-lg"><i className="fa fa-github fa-fw"></i> <span className="network-name">Github</span></a>
+                                    <a href="https://github.com/akataz" className="btn btn-default btn-lg"><i className="fa fa-github fa-fw"></i> <span className="network-name">Github</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="btn btn-default btn-lg"><i className="fa fa-linkedin fa-fw"></i> <span className="network-name">Linkedin</span></a>
+                                    <a href="https://www.linkedin.com/en/tyrusbrenc" className="btn btn-default btn-lg"><i className="fa fa-linkedin fa-fw"></i> <span className="network-name">Linkedin</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -88,7 +91,7 @@ const Template = () => {
                         <p className="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
                     </div>
                     <div className="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img className="img-responsive" src="../styles/img/ipad.png" alt=""/>
+                        <img className="img-responsive" src="../lib/img/ipad.png" alt=""/>
                     </div>
                 </div>
 
@@ -110,7 +113,7 @@ const Template = () => {
                         <p className="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
                     </div>
                     <div className="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img className="img-responsive" src="../styles/img/dog.png" alt=""/>
+                        <img className="img-responsive" src="../lib/img/dog.png" alt=""/>
                     </div>
                 </div>
 
@@ -132,7 +135,7 @@ const Template = () => {
                         <p className="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
                     </div>
                     <div className="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img className="img-responsive" src="../styles/img/phones.png" alt=""/>
+                        <img className="img-responsive" src="../lib/img/phones.png" alt=""/>
                     </div>
                 </div>
 
