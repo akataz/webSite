@@ -4,7 +4,7 @@ import React, { PropTypes } from 'react';
 import 'jquery';
 //  Bootstrap Core JavaScript -->
 //import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
-import Template from './template';
+import HomePage from './HomePage.js';
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Template />
+        <HomePage />
       </div>
     );
   }
