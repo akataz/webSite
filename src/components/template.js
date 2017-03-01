@@ -1,13 +1,7 @@
 import React from 'react';
-
-//  jQuery -->
-//import "../lib/js/jquery.js";
-//  Bootstrap Core JavaScript -->
-//import "../lib/js/bootstrap.min.js";
 //def loading up that css properly
 import "../lib/css/landing-page.css";
-//does not seem to load up
-//import "../lib/font-awesome/css/font-awesome.min.css"
+import Footer from " ./footer.js"
 
 const Template = () => {
     //  Navigation -->
@@ -58,9 +52,6 @@ const Template = () => {
                             <hr className="intro-divider"/>
                             <ul className="list-inline intro-social-buttons">
                                 <li>
-                                    <a href="https://twitter.com/SBootstrap" className="btn btn-default btn-lg"><i className="fa fa-twitter fa-fw"></i> <span className="network-name">Twitter</span></a>
-                                </li>
-                                <li>
                                     <a href="https://github.com/akataz" className="btn btn-default btn-lg"><i className="fa fa-github fa-fw"></i> <span className="network-name">Github</span></a>
                                 </li>
                                 <li>
@@ -87,11 +78,11 @@ const Template = () => {
                     <div className="col-lg-5 col-sm-6">
                         <hr className="section-heading-spacer" />
                         <div className="clearfix"></div>
-                        <h2 className="section-heading">Death to the Stock Photo:<br />Special Thanks</h2>
-                        <p className="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                        <h2 className="section-heading">ApexSwipe:<br /><h3>Hardware integrated realtime data sharing app</h3></h2>
+                        <p className="lead">Apex Swipe is a native mobile application that allows users to build virtual "decks" to get their friends opinions using swipe touch technology. It is written in React Native with Redux for both iOS and Android, and features include hardware integration via the mobile device's camera, Yelp API queries for restaurant data, and a Heroku and AWS deployed Node/Express/MongoDB back-end for API calls and user data storage. Our team utilized Test Driven Development via Mocha and Chai, as well as AGILE to keep the development process focused and efficient.</p>
                     </div>
                     <div className="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img className="img-responsive" src="../lib/img/ipad.png" alt=""/>
+                        <img className="img-responsive" src="../lib/img/apexSwipe.jpeg" alt=""/>
                     </div>
                 </div>
 
@@ -109,11 +100,11 @@ const Template = () => {
                     <div className="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <hr className="section-heading-spacer"/>
                         <div className="clearfix"></div>
-                        <h2 className="section-heading">3D Device Mockups<br />by PSDCovers</h2>
-                        <p className="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                        <h2 className="section-heading">Share Anything 2.0</h2>
+                        <p className="lead">A rental service riding on React and Redux, Share Anything 2.0 is inspired by AirBnB and incorporates such features as real time product chat and integrated payment solutions.</p>
                     </div>
                     <div className="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img className="img-responsive" src="../lib/img/dog.png" alt=""/>
+                        <img className="img-responsive" src="../lib/img/shareAnything.png" alt=""/>
                     </div>
                 </div>
 
@@ -131,11 +122,11 @@ const Template = () => {
                     <div className="col-lg-5 col-sm-6">
                         <hr className="section-heading-spacer"/>
                         <div className="clearfix"></div>
-                        <h2 className="section-heading">Google Web Fonts and<br />Font Awesome Icons</h2>
-                        <p className="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                        <h2 className="section-heading">Omgeo:<br />Geotagging Domain Registrar</h2>
+                        <p className="lead">Create longitude and latitude based tags registered in a central repository</p>
                     </div>
                     <div className="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img className="img-responsive" src="../lib/img/phones.png" alt=""/>
+                        <img className="img-responsive" src="../lib/img/omgeo.png" alt=""/>
                     </div>
                 </div>
 
@@ -152,18 +143,15 @@ const Template = () => {
 
                 <div className="row">
                     <div className="col-lg-6">
-                        <h2>Connect to Start Bootstrap:</h2>
+                        <h2>Connect to me!</h2>
                     </div>
                     <div className="col-lg-6">
                         <ul className="list-inline banner-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" className="btn btn-default btn-lg"><i className="fa fa-twitter fa-fw"></i> <span className="network-name">Twitter</span></a>
+                                <a href="https://github.com/akataz" className="btn btn-default btn-lg"><i className="fa fa-github fa-fw"></i> <span className="network-name">Github</span></a>
                             </li>
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" className="btn btn-default btn-lg"><i className="fa fa-github fa-fw"></i> <span className="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="#" className="btn btn-default btn-lg"><i className="fa fa-linkedin fa-fw"></i> <span className="network-name">Linkedin</span></a>
+                                <a href="https://linkedin.com/in/tyrusbrenc" className="btn btn-default btn-lg"><i className="fa fa-linkedin fa-fw"></i> <span className="network-name">Linkedin</span></a>
                             </li>
                         </ul>
                     </div>
@@ -176,7 +164,8 @@ const Template = () => {
         {/*//  /.banner -->*/}
 
         {/*//  Footer -->*/}
-        <footer>
+        <Footer />
+        {/* <footer>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -190,18 +179,18 @@ const Template = () => {
                             </li>
                             <li className="footer-menu-divider">&sdot;</li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#projects">Projects</a>
                             </li>
                             <li className="footer-menu-divider">&sdot;</li>
                             <li>
                                 <a href="#contact">Contact</a>
                             </li>
                         </ul>
-                        <p className="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                        <p className="copyright text-muted small">Made with love in San Francisco</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> */}
       </div>
     )
 };
