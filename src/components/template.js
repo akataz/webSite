@@ -1,44 +1,17 @@
 import React from 'react';
 //def loading up that css properly
+import Footer from "./Footer.js"
 import "../lib/css/landing-page.css";
-import Footer from " ./footer.js"
+import NavBar from "./NavBar.js"
+
 
 const Template = () => {
     //  Navigation -->
     return (
       <div>
-        <nav className="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-            <div className="container topnav">
-                {/*Brand and toggle get grouped for better mobile display*/}
-                <div className="navbar-header">
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                    <a className="navbar-brand topnav" href="#">Tyrus Brenc</a>
-                </div>
-                {/*//  Collect the nav links, forms, and other content for toggling -->*/}
-                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul className="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#about">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#services">About</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                {/*//  /.navbar-collapse -->*/}
-            </div>
-            {/*//  /.container -->*/}
-        </nav>
 
 
+        <NavBar />
         //  Header -->
         <a name="about"></a>
         <div className="intro-header">
@@ -165,32 +138,7 @@ const Template = () => {
 
         {/*//  Footer -->*/}
         <Footer />
-        {/* <footer>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <ul className="list-inline">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li className="footer-menu-divider">&sdot;</li>
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li className="footer-menu-divider">&sdot;</li>
-                            <li>
-                                <a href="#projects">Projects</a>
-                            </li>
-                            <li className="footer-menu-divider">&sdot;</li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <p className="copyright text-muted small">Made with love in San Francisco</p>
-                    </div>
-                </div>
-            </div>
-        </footer> */}
+
       </div>
     )
 };

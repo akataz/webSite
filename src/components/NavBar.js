@@ -1,37 +1,39 @@
 import React from 'react';
-//import {Link} from 'react-router';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
-const NavBar = () => {
-
+const Navbar = () => {
   return (
-    <div>
-      <Navbar>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="#">Tyrus Brenc</a>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <NavItem eventKey={1} href="#">Projects</NavItem>
-          <NavItem eventKey={2} href="https://www.github.com/akataz">Github</NavItem>
-          <NavItem eventKey={4} href="#">About</NavItem>
 
-        </Nav>
-        <Nav pullRight>
-          <NavDropdown pullRight eventKey={3} title="Personal" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1}>Recipes</MenuItem>
-            <MenuItem divider />
-            <MenuItem eventKey={3.2}>JobHunter9000</MenuItem>
-          </NavDropdown>
-        </Nav>
-      </Navbar>
-      <div>
-        <img src={require('../tyrus_headshot.jpg')} alt="profile pic" height="400" className="profile"/>
-      </div>
-    </div>
+    <nav className="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div className="container topnav">
+            {/*Brand and toggle get grouped for better mobile display*/}
+            <div className="navbar-header">
+                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span className="sr-only">Toggle navigation</span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                </button>
+                <a className="navbar-brand topnav" href="#">Tyrus Brenc</a>
+            </div>
+            {/*//  Collect the nav links, forms, and other content for toggling -->*/}
+            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul className="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#services">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            {/*//  /.navbar-collapse -->*/}
+        </div>
+        {/*//  /.container -->*/}
+    </nav>
   )
-};
+}
 
-
-export default NavBar;
+export default Navbar;

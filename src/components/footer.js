@@ -34,4 +34,4 @@ const Footer = () => {
     )
 };
 
-export module Footer;
+export default Footer;
